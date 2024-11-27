@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Karla:ital,wght@0,200..800;1,200..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+* {
+    font-family: "Karla", sans-serif;
+}
+
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0e68c;
+    color: #333;
+}
+
+header {
+    background: #8B5A2B;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #4ea61f;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #35424a;
+}
+
+h3 {
+    color: #35424a;
+    margin-top: 15px;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    color: #35424a;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: center;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 80%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(25, 132, 178, 0.1);
+    margin-right: 20px;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-photo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+#qualifications {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 22px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #35424a;
+}
+
+#qualifications h2 {
+    margin-bottom: 15px;
+}
+
+#qualifications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#qualifications ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+    padding-left: 25px;
+    position: relative;
+}
+
+#qualifications ul li::before {
+    content: "✔️";
+    position: absolute;
+    left: 0;
+    color: #4ea61f;
+    font-size: 1.2em;
+}

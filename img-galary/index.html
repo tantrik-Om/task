@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="title">Dynamic Image Gallery</h1>
+
+    <!-- Image Gallery -->
+    <div class="gallery" id="gallery">
+        <div class="thumbnail" onclick="openModal(); currentSlide(1)">
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="thumbnail" onclick="openModal(); currentSlide(2)">
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()" aria-label="Close Modal">&times;</span>
+        <div class="modal-content" id="modalContent">
+            <div class="mySlides">
+                <img src="image1.jpg" alt="Image 1">
+            </div>
+            <div class="mySlides">
+                <img src="image2.jpg" alt="Image 2">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)" aria-label="Previous">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)" aria-label="Next">&#10095;</a>
+        </div>
+    </div>
+
+    <!-- Upload Section -->
+    <div class="upload-section">
+        <label for="imageInput" class="custom-file-upload">
+            Choose Image
+        </label>
+        <input type="file" id="imageInput" accept="image/*" onchange="previewImage()">
+        <button class="upload-button" onclick="addImage()">Add Image</button>
+    </div>
+
+    <!-- Image Preview -->
+    <div class="image-preview" id="imagePreview">
+        <p>No image chosen</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
